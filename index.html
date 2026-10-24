@@ -5,58 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAXMI RAWAT PPT</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
         body {
-            background-color: #f4f6f9;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 30px 15px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f5f9;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
         }
+
         h1 {
-            font-size: 26px;
+            color: #1a233a;
+            margin-bottom: 20px;
             font-weight: bold;
-            margin-bottom: 25px;
-            color: #1e293b;
-            letter-spacing: 1px;
-            text-transform: uppercase;
         }
-        .iframe-container {
-            width: 100%;
-            max-width: 850px;
-            height: 500px;
-            background: #ffffff;
-            border-radius: 12px;
+
+        .ppt-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         }
+
         iframe {
             width: 100%;
-            height: 100%;
+            height: 450px;
             border: none;
+            display: block;
         }
-        .btn {
-            display: inline-block;
+
+        .btn-container {
+            margin-top: 25px;
+        }
+
+        .download-btn {
             background-color: #2563eb;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 14px 28px;
-            border-radius: 8px;
-            font-weight: 600;
+            color: white;
+            padding: 12px 28px;
             font-size: 16px;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
-            transition: all 0.3s ease;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            display: inline-block;
+            transition: background 0.2s ease;
         }
-        .btn:hover {
+
+        .download-btn:hover {
             background-color: #1d4ed8;
-            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -64,13 +60,15 @@
 
     <h1>LAXMI RAWAT PPT</h1>
 
-    <!-- Embedded PowerPoint Viewer -->
-    <div class="iframe-container">
-        <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https://laxmirawat24680-eng.github.io/portfolio/portfolio.pptx" frameborder="0"></iframe>
+    <div class="ppt-container">
+        <!-- Fixed Preview Embed Link -->
+        <iframe src="https://docs.google.com/presentation/d/1Ln8B-fuzgl6bfeQnB9a-X95sURlq5iXb/preview" allowfullscreen="true"></iframe>
     </div>
 
-    <!-- Download Button -->
-    <a href="portfolio.pptx" class="btn" download>Download PPT</a>
+    <div class="btn-container">
+        <!-- Direct PPTX Download Link -->
+        <a href="https://docs.google.com/presentation/d/1Ln8B-fuzgl6bfeQnB9a-X95sURlq5iXb/export?format=pptx" class="download-btn">Download PPT</a>
+    </div>
 
 </body>
 </html>
